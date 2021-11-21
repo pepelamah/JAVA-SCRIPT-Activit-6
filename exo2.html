@@ -1,0 +1,41 @@
+<html>
+<body>
+    <pre>
+        <script>
+            document.writeln("la liste des marque: ")
+            var marques=["apple","samsung","dell","hp","lg","acer"];
+            for(valeurs of marques)
+            {
+                document.writeln(valeurs);
+            }
+            var avis=prompt("Entrez correctement le nom de la marque que vous preferez: ")
+            
+
+            
+            if(marques.includes(avis))
+            {
+                var indice=marques.indexOf(avis);
+                let del=marques.splice(indice,1); 
+                alert("ok");
+                
+                
+            }
+            
+            else
+                {
+                    alert("indisponible");
+                }
+
+
+            document.writeln("la nouvelle  liste des marque: ")
+            for(valeurs of marques)
+            {
+                document.writeln(valeurs);
+            }
+            
+        
+        </script>
+    </pre>
+
+</body>
+</html>
