@@ -1,0 +1,73 @@
+<html>
+<body>
+    <pre>
+        <script>
+            document.writeln("----------------------------------------")
+            let tab1 =["Gregoire","Noemie","Pierre","Lea","Jacques","Annie","Frederic","Magalie","Lucas"]
+            let tab2 =[4,25,1,2,9,10,6,12,21,8,33]
+            let tab3=[1]
+            
+            
+            function dern(x,y)
+            {
+                var derniere_valeur1=x[x.length-1]
+                document.writeln(derniere_valeur1)
+                var derniere_valeur2=y[y.length-1]
+                document.writeln(derniere_valeur2)
+                
+            }
+            dern(tab1,tab2);
+
+            function indice_pair()
+            {
+                for(var i=0;i<tab1.length;i++)
+                {
+                    if(i%2==0)
+                    document.writeln(tab1[i])
+                }
+            }
+            indice_pair();
+            document.writeln("---------------------------------------------------")
+            
+            function derniers()
+            {
+                let decoupe=tab2.slice(4)
+                document.writeln(decoupe)
+            }
+            derniers();
+
+            function produit()
+            {
+                var total=1
+                for(var j=0;j<tab2.length;j++)
+                {
+                    total=total*tab2[j]
+                    
+                }
+                document.writeln("le produit est:"+total)
+            }
+            produit();
+
+            function divisible()
+            {
+                for(var k=0;k<tab2.length;k++)
+                {
+                    if(tab2[k]%2==0)
+                    {
+                        let new_tab=tab3.splice(0,1,tab2[k])
+                    
+                    }
+                    
+                    
+                }
+                document.writeln(tab3)
+            }
+            divisible();
+            
+        </script>
+    </pre>
+
+</body>
+</html>
+
+            
